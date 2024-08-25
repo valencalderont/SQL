@@ -1,0 +1,30 @@
+SELECT *
+FROM superstore
+LIMIT 5;
+
+SELECT item_name, price
+FROM superstore
+WHERE price
+ORDER BY price DESC, item_name;
+
+SELECT COUNT (price)
+FROM superstore;
+
+SELECT SUM (price)
+FROM superstore;
+
+SELECT MAX (price)
+FROM superstore;
+
+SELECT AVG (price)
+FROM superstore;
+
+--HOW MANY KITCHEN SUPPLIES ARE INSTOCK
+SELECT MIN (price)
+FROM superstore;
+
+SELECT category, price
+FROM superstore
+WHERE price>50
+ORDER BY price DESC,category;
+
